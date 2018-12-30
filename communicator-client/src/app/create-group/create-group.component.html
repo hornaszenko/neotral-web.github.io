@@ -1,0 +1,11 @@
+<div class="modal-header">
+  Kreator grupy
+</div>
+<div class="modal-body">
+  <label for="name">Nazwa nowej grupy</label>
+  <input id="name" class="form-control" type="text" aria-describedby="groupName" [(ngModel)]="groupNameInputValue">
+  <small id="groupName" class="form-text text-muted">Nazwa grupy musi składać co najmniej z 4 liter.</small>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" (click)="createGroup()" [disabled]="!isNameValid()">Stwórz</button>
+</div>
