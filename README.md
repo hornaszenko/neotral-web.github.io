@@ -9,7 +9,7 @@ użytkowników, grup i wiadomości. Cała komunikacja oparta jest na Spring JPA 
 pozwala na podanie danych takich jak nazwa użytkownika, hasło. Dane te są poddawane sprawdzeniu i zapisywane do bazy danych aplikacji.
 <li><strong>Autoryzacja użytkownika poprzez JSON Web Token</strong> - Każdy użytkownik logujący się do systemu otrzymuje od serwera
 wygenerowany token, będący jednoznacznym identyfikatorem użytkownika. Token taki jest zapisywany w pamięci przeglądarki i dodawany
-poprzez interceptor do każdego zapytania do serwera. Serwer z kolei, sprawdza istnieje tego tokenu w nagłówku http, sprawdza jego
+poprzez interceptor do każdego zapytania do serwera. Serwer z kolei, sprawdza istnienie tego tokenu w nagłówku http, sprawdza jego
 poprawność,a także czy okres jego ważności nie minął. Na podstawie tego serwer udostępnia zasoby, bądź odsyła użytkownika do
 strony logowania w celu potwierdzenia tożsamości.</li>
 <li><strong>REST services</strong> - Warstwa frontowa komunikuje się z serwerem za pomocą kilku dostępnych metod.</li>
