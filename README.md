@@ -19,6 +19,6 @@ reagująca na zmianę danych</li>
 <p>Aplikacja pozwala na prowadzenie konwersacji pomiędzy zalogowanymi użytkownikami poprzez grupy. Użytkownik może zasubskrybować
 dowolną grupę, jak również ją opuścić</p>
 <img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-login.jpg"/>
-<img src="https://drive.google.com/file/d/1bXg2of-10x36Hqev4zz7Gd8_9TCuJq4a/view?usp=sharing" alt="Widok ekranu rejestracji"/>
+<img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-register.jpg" alt="Widok ekranu rejestracji"/>
 <img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-home.jpg" alt="Widok strony głównej"/>
 <img src="https://drive.google.com/open?id=1kToKue2LQrnjhcd5nPzIkiWgY2iSt39O" alt="Widok dodawania grup"/>
