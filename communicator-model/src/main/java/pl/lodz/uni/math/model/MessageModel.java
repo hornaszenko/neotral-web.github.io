@@ -17,13 +17,14 @@ import java.util.Date;
 @Table(name = "messages")
 @Getter
 @Setter
+@SequenceGenerator(name="message_seq", initialValue=100)
 public class MessageModel {
 
     /**
      * Unique id key.
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "message_seq")
     private Long id;
 
     /**

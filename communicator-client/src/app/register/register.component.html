@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="col-md-4 col-sm-12 register">
+    <h1>Rejestracja</h1>
+    <div class="register-form-container">
+      <form (submit)="register()">
+        <div class="form-group">
+          <label for="username">Nazwa użytkownika</label>
+          <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp"
+                 [(ngModel)]="userModel.username"/>
+          <small id="usernameHelp" class="form-text text-muted">Nazwa użytkownika musi być unikalna i zawierać co
+            najmniej 6 znaków.
+          </small>
+
+          <label for="password">Hasło</label>
+          <input type="password" class="form-control" name="password" id="password" aria-describedby="passwordHelp"
+                 [(ngModel)]="userModel.password"/>
+          <small id="passwordHelp" class="form-text text-muted">Hasło musi zawierać co najmniej 6 znaków.</small>
+
+          <label for="firstName">Imię</label>
+          <input type="text" id="firstName" name="firstName" class="form-control" [(ngModel)]="userModel.firstName"/>
+
+          <label for="surname">Nazwisko</label>
+          <input type="text" id="surname" name="surname" class="form-control" [(ngModel)]="userModel.surname"/>
+        </div>
+        <button type="submit" class="btn btn-primary register-button">Rejestracja</button>
+      </form>
+    </div>
+  </div>
+</div>

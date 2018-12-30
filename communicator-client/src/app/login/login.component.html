@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="col-md-4 col-sm-12 login">
+    <h1>Logowanie</h1>
+    <div class="login-form-container">
+      <form (submit)="login()">
+        <div class="form-group">
+          <label for="username">Nazwa użytkownika</label>
+          <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp"
+                 [(ngModel)]="user.username"/>
+          <small id="usernameHelp" class="form-text text-muted">Nazwa użytkownika musi być unikalna.</small>
+
+          <label for="password">Hasło</label>
+          <input type="password" class="form-control" name="password" id="password" aria-describedby="passwordHelp"
+                 [(ngModel)]="user.password"/>
+          <small id="passwordHelp" class="form-text text-muted">Hasło musi zawierać co najmniej 6 znaków.</small>
+          <button type="submit" class="btn btn-primary login-button" [disabled]="!isValid()">Logowanie</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

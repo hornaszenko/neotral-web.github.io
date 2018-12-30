@@ -1,0 +1,12 @@
+.login {
+  margin: 100px auto 0;
+}
+
+.login > h1 {
+  text-align: center;
+}
+
+.login-button {
+  margin-top: 32px;
+  width: 100%;
+}

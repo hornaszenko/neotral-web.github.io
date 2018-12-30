@@ -13,9 +13,9 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @EntityScan(basePackages = {"pl.lodz.uni.math.model"})
 public class CommunicatorApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CommunicatorApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CommunicatorApplication.class, args);
+    }
 
 }
 

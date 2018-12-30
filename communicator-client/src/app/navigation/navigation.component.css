@@ -1,0 +1,20 @@
+.img-navbar-logo {
+  max-height: 48px;
+}
+
+.nav-link {
+  display: inline;
+  margin-right: 24px;
+}
+
+.navbar-right {
+  flex-direction: inherit;
+}
+
+.navbar {
+  background-color: #2E5ACB;
+}
+
+a {
+  color: white;
+}

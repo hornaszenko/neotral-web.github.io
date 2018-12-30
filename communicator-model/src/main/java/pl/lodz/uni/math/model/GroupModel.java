@@ -8,6 +8,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -19,13 +20,14 @@ import java.util.Set;
 @Table(name = "groups")
 @Getter
 @Setter
+@SequenceGenerator(name="group_seq", initialValue=100)
 public class GroupModel {
 
     /**
      * Unique id key.
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "group_seq")
     private Long id;
 
     /**
@@ -33,7 +35,7 @@ public class GroupModel {
      */
     @Column(name = "name", unique = true, nullable = false)
     @NotBlank
-    @Size(min = 4, max = 20)
+    @Size(min = 4, max = 64)
     private String name;
 
     /**
@@ -66,4 +68,18 @@ public class GroupModel {
      */
     @ManyToMany(mappedBy = "groups")
     private Set<UserModel> users;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GroupModel that = (GroupModel) o;
+        return Objects.equals(id, that.id) &&
+                Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
 }

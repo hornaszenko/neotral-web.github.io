@@ -1,0 +1,12 @@
+.register {
+  margin: 100px auto 0;
+}
+
+.register > h1 {
+  text-align: center;
+}
+
+.register-button {
+  margin-top: 32px;
+  width: 100%;
+}

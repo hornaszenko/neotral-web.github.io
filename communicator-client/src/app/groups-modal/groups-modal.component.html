@@ -1,0 +1,32 @@
+<div class="modal-header">
+  Lista dostępnych grup
+</div>
+<div class="modal-body">
+  <div class="group-search">
+    <input type="text" placeholder="Rozpocznij wpisywanie nazwy aby odnaleźć grupę">
+  </div>
+  <div *ngIf="newConversations">
+    <div class="groups-container" *ngFor="let conversation of result">
+      <div class="group-container">
+        <div class="group-image">
+          <img
+            [src]="conversation.imagePath != null ? conversation.imagePath : 'http://www.saltstechstep.co.uk/images/default-user.jpg'">
+        </div>
+        <div class="group-info">
+          <h6>{{ conversation.name }}</h6>
+        </div>
+        <div class="group-button">
+          <button type="button" class="btn btn-default btn-sm" (click)="addGroup(conversation)">
+            <span>Dołącz</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!newConversations">
+    <span class="no-result">Brak dostępnych grup</span>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" (click)="loadMore()">Wczytaj więcej</button>
+</div>

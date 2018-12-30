@@ -1,0 +1,30 @@
+<div *ngIf="conversation" class="conversation-container">
+  <div class="conversation-header">
+    <h4>{{conversation.name}}</h4>
+  </div>
+  <div class="conversations-body" id="messages">
+    <div *ngIf="messages">
+      <div class="load-more">
+        <a href="#" (click)="loadMore()">Wczytaj więcej</a>
+      </div>
+      <div class="message-container" *ngFor="let message of messages">
+        <div class="message-content">
+          <span class="message-text">{{message.content}}</span>
+          <p class="message-time"><sub>
+            <small>{{message.author}} {{message.time}}</small>
+          </sub></p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!messages">
+      <div class="no-messages">
+        Brak konwersacji
+      </div>
+    </div>
+  </div>
+  <div class="conversation-footer">
+    <input class="conversation-input" type="text" [(ngModel)]="textInputValue"/>
+    <button class="btn-primary btn addMessage-button" (click)="sendMessage()">Wyślij</button>
+  </div>
+</div>
+

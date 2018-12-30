@@ -1,0 +1,59 @@
+.conversation-header {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  background-color: #2E5ACB;
+  padding: 20px 0 20px 0;
+}
+
+.conversation-header h4 {
+  text-align: center;
+  color: white;
+}
+
+.no-messages {
+  width: 100%;
+  text-align: center;
+}
+
+.conversations-body {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.message-content {
+  margin: 20px 0 20px 0;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+}
+
+.conversation-container {
+  height: 100%;
+}
+
+.conversation-footer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.conversation-input {
+  width: 80%;
+  height: 50px;
+}
+
+.message-text {
+  padding: 10px;
+  background-color: #2E5ACB;
+  color: white;
+}
+
+.addMessage-button {
+  width: 150px;
+  margin-top: -5px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.load-more {
+  width: 100%;
+  text-align: center;
+}

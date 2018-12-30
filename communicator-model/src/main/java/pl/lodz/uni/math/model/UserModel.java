@@ -8,6 +8,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -19,13 +20,14 @@ import java.util.Set;
 @Table(name = "persons")
 @Getter
 @Setter
+@SequenceGenerator(name="user_seq", initialValue=100)
 public class UserModel {
 
     /**
      * Unique id key.
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
     private Long id;
 
     /**
@@ -41,8 +43,23 @@ public class UserModel {
      */
     @Column(name = "password", nullable = false)
     @NotBlank
-    @Size(min = 6, max = 20)
     private String password;
+
+    /**
+     * User's first name.
+     */
+    @Column(name = "first_name", nullable = false)
+    @NotBlank
+    @Size(min = 2, max = 64)
+    private String firstName;
+
+    /**
+     * User's surname.
+     */
+    @Column(name = "surname", nullable = false)
+    @NotBlank
+    @Size(min = 2, max = 64)
+    private String surname;
 
     /**
      * User's role for example 'Admin'
@@ -80,7 +97,27 @@ public class UserModel {
      * Many to many relation between conversation groups and users.
      */
     @ManyToMany
-    @JoinTable(name = "users_groups", joinColumns = {@JoinColumn(name = "group_id")},
-            inverseJoinColumns = {@JoinColumn(name = "user_id")})
+    @JoinTable(name = "users_groups", joinColumns = {@JoinColumn(name = "user_id")},
+            inverseJoinColumns = {@JoinColumn(name = "group_id")})
     private Set<GroupModel> groups;
+
+    /**
+     * User user logged in now.
+     */
+    @Column(name = "active", nullable = false)
+    private Boolean active = false;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserModel userModel = (UserModel) o;
+        return Objects.equals(id, userModel.id) &&
+                Objects.equals(username, userModel.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, username);
+    }
 }
