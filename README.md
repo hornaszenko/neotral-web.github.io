@@ -20,5 +20,5 @@ reagująca na zmianę danych</li>
 dowolną grupę, jak również ją opuścić</p>
 <img src="https://drive.google.com/file/d/11P4XCPJeurNqPidHCUUAlcPtcD5OKFDl/view?usp=sharing" alt="Widok ekranu logowania"/>
 <img src="https://drive.google.com/file/d/1bXg2of-10x36Hqev4zz7Gd8_9TCuJq4a/view?usp=sharing" alt="Widok ekranu rejestracji"/>
-<img src="https://drive.google.com/file/d/1mxE_Y98YEdEoKTVkxvZVdtHmK8yKqx-l/view?usp=sharing" alt="Widok strony głównej"/>
+<img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-home.jpg" alt="Widok strony głównej"/>
 <img src="https://drive.google.com/open?id=1kToKue2LQrnjhcd5nPzIkiWgY2iSt39O" alt="Widok dodawania grup"/>
