@@ -21,4 +21,4 @@ dowolną grupę, jak również ją opuścić</p>
 <img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-login.jpg"/>
 <img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-register.jpg" alt="Widok ekranu rejestracji"/>
 <img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-home.jpg" alt="Widok strony głównej"/>
-<img src="https://drive.google.com/open?id=1kToKue2LQrnjhcd5nPzIkiWgY2iSt39O" alt="Widok dodawania grup"/>
+<img src="https://github.com/piotrkrzyminski/communicator/blob/master/images/communicator-select-group.jpg" alt="Widok dodawania grup"/>
