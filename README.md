@@ -13,8 +13,8 @@ poprzez interceptor do każdego zapytania do serwera. Serwer z kolei, sprawdza i
 poprawność,a także czy okres jego ważności nie minął. Na podstawie tego serwer udostępnia zasoby, bądź odsyła użytkownika do
 strony logowania w celu potwierdzenia tożsamości.</li>
 <li><strong>REST services</strong> - Warstwa frontowa komunikuje się z serwerem za pomocą kilku dostępnych metod.</li>
-<li><strong>Single Page Application</strong> - Dzięki wykorzystaniu routingu warstwa frontowa to jedna strona internetowa w sposób dynamiczny
-reagująca na zmianę danych</li>
+<li><strong>Single Page Application</strong> - Dzięki wykorzystaniu routingu warstwa frontowa to jedna strona internetowa w sposób dynamiczny reagująca na zmianę danych</li>
+<li><strong>Responsywność</strong> - Wygląd aplikacji powstał w oparciu o framework Bootstrap i jest w pełni responsywny</li>
 </ul>
 <p>Aplikacja pozwala na prowadzenie konwersacji pomiędzy zalogowanymi użytkownikami poprzez grupy. Użytkownik może zasubskrybować
 dowolną grupę, jak również ją opuścić</p>
